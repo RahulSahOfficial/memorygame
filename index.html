@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory  Game</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css"
+  />
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="outermaindiv">
+    <div class="mainbox">
+        <div class="tophead">
+            Memory Game
+        </div>
+        <hr>
+        <div class="gamebox">
+            <div onclick="clicked(this)" id="1" class="eachgamebox animate__animated">
+                <img src="images/card.png" class="cardimage">
+            </div>
+            <div onclick="clicked(this)" id="2" class="eachgamebox animate__animated">
+                <img src="images/card.png" class="cardimage">
+            </div>
+            <div onclick="clicked(this)" id="3" class="eachgamebox animate__animated">
+                <img src="images/card.png" class="cardimage">
+            </div>
+            <div onclick="clicked(this)" id="4" class="eachgamebox animate__animated">
+                <img src="images/card.png" class="cardimage">
+            </div>
+            <div onclick="clicked(this)" id="5" class="eachgamebox animate__animated">
+                <img src="images/card.png" class="cardimage">
+            </div>
+            <div onclick="clicked(this)" id="6" class="eachgamebox animate__animated">
+                <img src="images/card.png" class="cardimage">
+            </div>
+            <div onclick="clicked(this)" id="7" class="eachgamebox animate__animated">
+                <img src="images/card.png" class="cardimage">
+            </div>
+            <div onclick="clicked(this)" id="8" class="eachgamebox animate__animated">
+                <img src="images/card.png" class="cardimage">
+            </div>
+            <div onclick="clicked(this)" id="9" class="eachgamebox animate__animated">
+                <img src="images/card.png" class="cardimage">
+            </div>
+            <div onclick="clicked(this)" id="10" class="eachgamebox animate__animated">
+                <img src="images/card.png" class="cardimage">
+            </div>
+            <div onclick="clicked(this)" id="11" class="eachgamebox animate__animated">
+                <img src="images/card.png" class="cardimage">
+            </div>
+            <div onclick="clicked(this)" id="12" class="eachgamebox animate__animated">
+                <img src="images/card.png" class="cardimage">
+            </div>
+        </div>
+        <div class="scorebox">
+        <p>Completed: <span id="comp">0%</span></p>
+        <p>Turns: <span id="turns">00</span></p>
+    <p>Time: <span id="min">00</span>m <span id="sec">00</span>s</p>
+    </div>
+    </div>
+    
+</div>
+<div class="footer">
+    <p>© Copyright 2020 &nbsp;&nbsp;|&nbsp;&nbsp; Created By Rahul Sah</p>
+</div>
+<div class="restartdiv" onclick="reload()">
+    <p>Restart Game</p>
+</div>
+<div class="wincupdiv animate__animated animate__backInUp">
+    <div class="cupcont">
+        <img src="images/win.png" class="wincup"> 
+    </div>
+</div>
+
+<!-- </div> -->
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/mathusummut/confetti.js/confetti.min.js"></script>
+</body>
+</html>

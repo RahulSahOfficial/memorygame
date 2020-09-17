@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+ /* display: flex; */
+ background: #95afc0;
+ font-family: Roboto;
+ overflow: hidden;
+}
+.outermaindiv
+{
+    text-align: center;
+    margin: 2rem auto;
+}
+.mainbox
+{margin: 0 auto;
+    display: inline-block;
+    width: 50rem;
+    padding: 1rem 5rem 1rem;
+    box-shadow: 5px 5px 10px #8d8d8d;
+    background-color: white;
+    font-weight: 500;
+    border-top: 7px solid #ff7979;
+    border-bottom: 7px solid #22a6b3;
+}
+.tophead
+{
+    font-size: 2rem;
+    text-align: center;
+    color: #ff7979;
+    padding: 1rem;
+}
+.gamebox{
+    margin :1rem 0 ;
+}
+.eachgamebox
+{
+    display: inline-block;
+    width:23%;
+    border-radius: 0.5rem;
+    border: 1px solid grey;
+    margin: 0.2rem 0.1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.eachgamebox:hover
+{
+    transform: scale(1.04,1.04);
+}
+.eachgamebox img{
+    width: 100%;
+    height: 100%;
+}
+.scorebox
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 1rem 1rem;
+}
+.scorebox p
+{
+    font-size: 1.2rem;
+    color: grey;
+}
+#comp,#min,#sec,#turns
+{
+    color: darkslategrey;
+    font-size: 1.3rem;
+    padding-left: 0.3rem;
+}
+#comp
+{
+    width: 4rem;
+    display: inline-block;
+}
+.footer
+{
+        position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #3c3c3c;
+    padding: 0.7rem;
+    color: white;
+    text-align: center;
+}
+.footer p
+{
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-weight: 300;
+}
+.restartdiv
+{
+    display: inline-block;
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    background: #eb3b5a;
+    padding: 0.7rem 1rem;
+    border-radius: 0.6rem;
+    cursor: pointer;
+}
+.restartdiv p
+{
+    border: none;
+    background: #eb3b5a;
+    color: white;
+    font-size: 1.2rem;
+}
+.wincupdiv
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 14rem auto;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    display: none;
+}
+.cupcont img
+{
+    width: 15rem;
+}
