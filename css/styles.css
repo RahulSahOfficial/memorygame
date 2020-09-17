@@ -125,3 +125,37 @@ body{
 {
     width: 15rem;
 }
+
+@media only screen and (max-width:400px) 
+{
+    .mainbox
+    {
+        width: 20rem;
+    padding: 0.5rem 1rem 0;
+    }
+    .eachgamebox
+    {
+        width: 28%;
+    }
+    .footer p
+    {
+        font-size: 1rem;
+    }
+    .scorebox p
+    {
+        font-size: 1rem;
+    }
+    .restartdiv {
+        box-shadow: 1px 1px 5px #615f5f9e;
+        right: 1rem;
+        top: 3rem;
+    }
+    .wincupdiv
+    {
+        margin: 8rem auto;
+    }
+    .alltimeblock
+    {
+        white-space: nowrap;
+    }
+}

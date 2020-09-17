@@ -7,7 +7,15 @@ var wrong = new Audio("audio/wrong.mp3");
 var time=new Date();
 $(document).ready(function()
 {
+    if(screen.width<=400)
+    {
+        $("#restartbtn").html("<i class='fa fa-repeat' aria-hidden='true'></i>");
+    }
+    else{
+        $("#restartbtn").text("Restart Game");
+    }
     timer();
+
     arr=setCards();
     console.log(arr);
     var cardimages=document.getElementsByClassName("cardimage");
@@ -63,7 +71,7 @@ function clicked(e)
     	$(e).addClass("animate__flipInY");
     	setTimeout(function(){ 
     		$(e).removeClass("animate__flipInY");
-    		 }, 500);
+        }, 500);
         var id=$(e).attr("id");
         $(e).find("img").attr("src","images/"+arr[id-1]+".png")
         ccnt=ccnt+1;

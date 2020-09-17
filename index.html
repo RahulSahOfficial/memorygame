@@ -8,6 +8,7 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css"
   />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
@@ -59,7 +60,7 @@
         <div class="scorebox">
         <p>Completed: <span id="comp">0%</span></p>
         <p>Turns: <span id="turns">00</span></p>
-    <p>Time: <span id="min">00</span>m <span id="sec">00</span>s</p>
+    <p>Time: <span class="alltimeblock"><span id="min">00</span>m <span id="sec">00</span>s</span></p>
     </div>
     </div>
     
@@ -68,7 +69,7 @@
     <p>© Copyright 2020 &nbsp;&nbsp;|&nbsp;&nbsp; Created By Rahul Sah</p>
 </div>
 <div class="restartdiv" onclick="reload()">
-    <p>Restart Game</p>
+    <p id="restartbtn"></p>
 </div>
 <div class="wincupdiv animate__animated animate__backInUp">
     <div class="cupcont">
